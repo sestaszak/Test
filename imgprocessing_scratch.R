@@ -75,12 +75,13 @@ img.segmented[,,2] = G
 img.segmented[,,3] = B
 #img.segmented[,,4] = Alp
 
-# View the result
+imgrgb<-rasterGrob(img.segmented)
+
 grid.raster(img.segmented)
 
-png(filename="segmentedimg.png")
-grid.raster(img.segmented)
-dev.off()
+# png(filename="segmentedimg.png")
+# grid.raster(img.segmented)
+# dev.off()
 
 #why is this in gray scale?
 library("rgl")
